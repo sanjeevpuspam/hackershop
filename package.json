@@ -1,31 +1,34 @@
 {
-  "name": "kanban-board-react-easy",
+  "name": "hacker-shop-shopping-cart",
+  "publisher": "Sanjeev Puspam",
+  "homepage": "https://sanjeevpuspam.github.io/HackerShop",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.0",
-    "@testing-library/react": "^10.4.7",
-    "create-react-app": "^3.4.1",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.3",
+    "create-react-app": "^5.0.0",
     "h8k-components": "^1.0.0",
     "h8k-design": "^1.0.16",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "^4.0.1",
-    "save": "^2.3.1"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^5.0.0"
   },
   "scripts": {
     "prestart": "npm install",
     "pretest": "npm install",
     "build": "react-scripts build",
     "start": "cross-env HOST=0.0.0.0 PORT=8000 ./node_modules/.bin/react-scripts start",
-    "test": "cross-env CI=true ./node_modules/.bin/react-scripts test --verbose --env=jsdom --testResultsProcessor ./node_modules/jest-junit"
+    "test": "cross-env CI=true ./node_modules/.bin/react-scripts test --verbose --env=jsdom --testResultsProcessor ./node_modules/jest-junit",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
-    "chai": "^4.2.0",
-    "cross-env": "^7.0.2",
-    "expect": "^26.1.0",
-    "jest-junit": "^11.1.0",
-    "react-test-renderer": "^16.13.1"
+    "chai": "^4.3.6",
+    "cross-env": "^7.0.3",
+    "expect": "^27.5.1",
+    "jest-junit": "^13.0.0",
+    "react-test-renderer": "^17.0.2"
   },
   "browserslist": {
     "production": [
