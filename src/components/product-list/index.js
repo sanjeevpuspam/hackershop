@@ -19,7 +19,7 @@ export default class ProductList extends Component {
                                      className="d-inline-block align-top product-image"/>
                                 <div className="card-text pa-4">
                                     <h5 className="ma-0 text-center">{product.name}</h5>
-                                    <p className="ma-0 mt-8 text-center">${product.price}</p>
+                                    <p className="ma-0 mt-8 text-center">₹{product.price}</p>
                                 </div>
                                 <div className="card-actions justify-content-center pa-4">
                                 {product.cartQuantity==0 ?

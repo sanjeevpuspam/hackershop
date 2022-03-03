@@ -59,7 +59,7 @@ class App extends Component {
                 <h8k-navbar header={title}></h8k-navbar>
                 <div className="layout-row shop-component">
                     <ProductList add={this.addItem} sub={this.subItem} products={this.state.products}/>
-                    <Cart cart={this.state.cart}/>
+                    { this.state.cart.items.length > 0 ? <Cart cart={this.state.cart}/> : '' } 
                 </div>
             </div>
         );
