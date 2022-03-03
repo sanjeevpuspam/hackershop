@@ -17,7 +17,9 @@ class App extends Component {
         });
         this.state = {
             cart: {
-                items: []
+                items: [],
+                totalPrice: 0,
+                totalQuantity: 0
             },
             products
         }
@@ -45,8 +47,10 @@ class App extends Component {
 
     updateCartState=(products)=>{
         const items = [...this.state.products].filter(product => product.cartQuantity > 0);
-        // const items = [...this.state.cart.items].filter(product => product.cartQuantity > 0); //maintain order of insertion
-        this.setState({cart: {items}, products});
+        const totalPrice = items.reduce((a, b) => +a + +(b.price) * b.cartQuantity, 0);
+        const totalQuantity = items.reduce((a, b) => +a + +b.cartQuantity, 0);
+
+        this.setState({cart: {items,totalPrice,totalQuantity}, products});
     }
 
     render() {
