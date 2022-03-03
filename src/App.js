@@ -11,7 +11,7 @@ class App extends Component {
         super();
         const products = [...PRODUCTS].map((product, index) => {
             product.id = index + 1;
-            product.image = `/images/items/${product.name.toLocaleLowerCase()}.png`;
+            product.image = `./images/items/${product.name.toLocaleLowerCase()}.png`;
             product.cartQuantity = 0;
             return product;
         });
