@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/hackershop/static/css/main.7fce0661.css",
-    "main.js": "/hackershop/static/js/main.29665c55.js",
+    "main.js": "/hackershop/static/js/main.4462914a.js",
     "stencil-polyfills-dom.js": "/hackershop/static/js/stencil-polyfills-dom.0af5b056.chunk.js",
     "stencil-polyfills-core-js.js": "/hackershop/static/js/stencil-polyfills-core-js.c76df26a.chunk.js",
     "stencil-polyfills-css-shim.js": "/hackershop/static/js/stencil-polyfills-css-shim.32bed671.chunk.js",
     "stencil-h8k-logo_2-entry-js.js": "/hackershop/static/js/stencil-h8k-logo_2-entry-js.c2a6e4c0.chunk.js",
     "index.html": "/hackershop/index.html",
     "main.7fce0661.css.map": "/hackershop/static/css/main.7fce0661.css.map",
-    "main.29665c55.js.map": "/hackershop/static/js/main.29665c55.js.map",
+    "main.4462914a.js.map": "/hackershop/static/js/main.4462914a.js.map",
     "stencil-polyfills-dom.0af5b056.chunk.js.map": "/hackershop/static/js/stencil-polyfills-dom.0af5b056.chunk.js.map",
     "stencil-polyfills-core-js.c76df26a.chunk.js.map": "/hackershop/static/js/stencil-polyfills-core-js.c76df26a.chunk.js.map",
     "stencil-polyfills-css-shim.32bed671.chunk.js.map": "/hackershop/static/js/stencil-polyfills-css-shim.32bed671.chunk.js.map",
@@ -16,6 +16,6 @@
   },
   "entrypoints": [
     "static/css/main.7fce0661.css",
-    "static/js/main.29665c55.js"
+    "static/js/main.4462914a.js"
   ]
 }

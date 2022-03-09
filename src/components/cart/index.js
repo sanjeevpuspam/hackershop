@@ -30,7 +30,7 @@ export default class Cart extends Component {
                   <td className="name" data-testid="cart-item-name">
                     {cartItem.name}
                   </td>
-                  <td className="numeric quantity">₹{ cartItem.price }</td>
+                  <td className="numeric quantity">₹ { cartItem.price }</td>
                   <td
                     className="numeric quantity"
                     data-testid="cart-item-quantity"
@@ -41,6 +41,8 @@ export default class Cart extends Component {
               );
             })}
           </tbody>
+          {
+            this.props.cart.items.length > 0 && 
             <thead>
               <tr>
                 <th colSpan={2}>Total</th>
@@ -48,6 +50,7 @@ export default class Cart extends Component {
                 <th className="numeric">{ this.props.cart.totalQuantity }</th>
               </tr>
             </thead>
+          }
         </table>
       </div>
     );
